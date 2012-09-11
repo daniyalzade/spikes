@@ -24,6 +24,7 @@
 		9BA58DF015FFCC1D00CF9F29 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DEE15FFCC1D00CF9F29 /* SettingsViewController.xib */; };
 		9BA58DF315FFD11400CF9F29 /* settings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DF215FFD11400CF9F29 /* settings.jpg */; };
 		9BA58DF515FFD28500CF9F29 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DF415FFD28500CF9F29 /* settings.png */; };
+		9BA58DF815FFEF3800CF9F29 /* ApikeyDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DF715FFEF3800CF9F29 /* ApikeyDB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		9BA58DEE15FFCC1D00CF9F29 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		9BA58DF215FFD11400CF9F29 /* settings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = settings.jpg; sourceTree = "<group>"; };
 		9BA58DF415FFD28500CF9F29 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		9BA58DF615FFEF3800CF9F29 /* ApikeyDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApikeyDB.h; sourceTree = "<group>"; };
+		9BA58DF715FFEF3800CF9F29 /* ApikeyDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApikeyDB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				9BA58DEC15FFCC1D00CF9F29 /* SettingsViewController.h */,
 				9BA58DED15FFCC1D00CF9F29 /* SettingsViewController.m */,
 				9BA58DEE15FFCC1D00CF9F29 /* SettingsViewController.xib */,
+				9BA58DF615FFEF3800CF9F29 /* ApikeyDB.h */,
+				9BA58DF715FFEF3800CF9F29 /* ApikeyDB.m */,
 				9B654CD415FF974100F7E2E3 /* CBViewController.h */,
 				9B654CD515FF974100F7E2E3 /* CBViewController.m */,
 				9BA58DDE15FFB77900CF9F29 /* ViewDeck */,
@@ -225,6 +230,7 @@
 				9BA58DE315FFB77900CF9F29 /* IIViewDeckController.m in Sources */,
 				9BA58DE415FFB77900CF9F29 /* WrapController.m in Sources */,
 				9BA58DEF15FFCC1D00CF9F29 /* SettingsViewController.m in Sources */,
+				9BA58DF815FFEF3800CF9F29 /* ApikeyDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

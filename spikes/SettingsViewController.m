@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import "ApikeyDB.h"
 
 @interface SettingsViewController ()
 
@@ -20,6 +21,7 @@
 - (IBAction)onSettingsSubmitted:(id)sender {
     NSString* apikey = self.apiKeyField.text;
     NSLog(@"apikey: %@", apikey);
+    [ApikeyDB setApikey:apikey];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
