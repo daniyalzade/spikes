@@ -11,11 +11,10 @@
 
 @interface SettingsViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *apiKeyField;
-
 @end
 
 @implementation SettingsViewController
+
 @synthesize apiKeyField;
 
 - (IBAction)onSettingsSubmitted:(id)sender {
@@ -35,8 +34,15 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [apiKeyField setDelegate:self];
+    [apiKeyField setReturnKeyType:UIReturnKeyDone];
+    [apiKeyField addTarget:self
+                       action:@selector(textFieldFinished:)
+             forControlEvents:UIControlEventEditingDidEndOnExit];
+
+    [apiKeyField setText:[ApikeyDB getApikey]];
     // Do any additional setup after loading the view from its nib.
+    [super viewDidLoad];
 }
 
 - (void)viewDidUnload
@@ -52,4 +58,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)textFieldFinished:(id)sender
+{
+    // [sender resignFirstResponder];
+}
 @end
