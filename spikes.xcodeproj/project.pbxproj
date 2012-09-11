@@ -20,6 +20,10 @@
 		9BA58DE315FFB77900CF9F29 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DE015FFB77900CF9F29 /* IIViewDeckController.m */; };
 		9BA58DE415FFB77900CF9F29 /* WrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DE215FFB77900CF9F29 /* WrapController.m */; };
 		9BA58DE715FFC9C300CF9F29 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DE615FFC9C300CF9F29 /* menu.png */; };
+		9BA58DEF15FFCC1D00CF9F29 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DED15FFCC1D00CF9F29 /* SettingsViewController.m */; };
+		9BA58DF015FFCC1D00CF9F29 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DEE15FFCC1D00CF9F29 /* SettingsViewController.xib */; };
+		9BA58DF315FFD11400CF9F29 /* settings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DF215FFD11400CF9F29 /* settings.jpg */; };
+		9BA58DF515FFD28500CF9F29 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DF415FFD28500CF9F29 /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,11 @@
 		9BA58DE115FFB77900CF9F29 /* WrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapController.h; sourceTree = "<group>"; };
 		9BA58DE215FFB77900CF9F29 /* WrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapController.m; sourceTree = "<group>"; };
 		9BA58DE615FFC9C300CF9F29 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		9BA58DEC15FFCC1D00CF9F29 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		9BA58DED15FFCC1D00CF9F29 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		9BA58DEE15FFCC1D00CF9F29 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		9BA58DF215FFD11400CF9F29 /* settings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = settings.jpg; sourceTree = "<group>"; };
+		9BA58DF415FFD28500CF9F29 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +102,9 @@
 				9BA58DE515FFC9AE00CF9F29 /* static */,
 				9B654CD115FF974100F7E2E3 /* CBAppDelegate.h */,
 				9B654CD215FF974100F7E2E3 /* CBAppDelegate.m */,
+				9BA58DEC15FFCC1D00CF9F29 /* SettingsViewController.h */,
+				9BA58DED15FFCC1D00CF9F29 /* SettingsViewController.m */,
+				9BA58DEE15FFCC1D00CF9F29 /* SettingsViewController.xib */,
 				9B654CD415FF974100F7E2E3 /* CBViewController.h */,
 				9B654CD515FF974100F7E2E3 /* CBViewController.m */,
 				9BA58DDE15FFB77900CF9F29 /* ViewDeck */,
@@ -130,6 +142,8 @@
 		9BA58DE515FFC9AE00CF9F29 /* static */ = {
 			isa = PBXGroup;
 			children = (
+				9BA58DF415FFD28500CF9F29 /* settings.png */,
+				9BA58DF215FFD11400CF9F29 /* settings.jpg */,
 				9BA58DE615FFC9C300CF9F29 /* menu.png */,
 			);
 			name = static;
@@ -191,6 +205,9 @@
 				9B654CD915FF974100F7E2E3 /* CBViewController.xib in Resources */,
 				9BA58DD715FFB49600CF9F29 /* LeftViewController.xib in Resources */,
 				9BA58DE715FFC9C300CF9F29 /* menu.png in Resources */,
+				9BA58DF015FFCC1D00CF9F29 /* SettingsViewController.xib in Resources */,
+				9BA58DF315FFD11400CF9F29 /* settings.jpg in Resources */,
+				9BA58DF515FFD28500CF9F29 /* settings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +224,7 @@
 				9BA58DD615FFB49600CF9F29 /* LeftViewController.m in Sources */,
 				9BA58DE315FFB77900CF9F29 /* IIViewDeckController.m in Sources */,
 				9BA58DE415FFB77900CF9F29 /* WrapController.m in Sources */,
+				9BA58DEF15FFCC1D00CF9F29 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

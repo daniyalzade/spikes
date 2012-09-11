@@ -8,6 +8,7 @@
 
 #import "CBViewController.h"
 #import "IIViewDeckController.h"
+#import "SettingsViewController.h"
 
 @interface CBViewController ()
 
@@ -20,9 +21,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     UIImage *buttonImage = [UIImage imageNamed:@"menu.png"];
+    UIImage *settingsImage = [UIImage imageNamed:@"settings.png"];
 
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"left" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
     [self.navigationItem.leftBarButtonItem setImage:buttonImage];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"right" style:UIBarButtonItemStyleBordered target:self action:@selector(loadSettingsVC)];
+    [self.navigationItem.rightBarButtonItem setImage: settingsImage];
 }
 
 - (void)viewDidUnload
@@ -39,6 +43,12 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
+}
+
+- (void)loadSettingsVC
+{
+    UIViewController* settingsVC = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+    [[self navigationController] pushViewController:settingsVC animated:YES];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
