@@ -14,8 +14,12 @@
 		9B654CCF15FF974100F7E2E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B654CCE15FF974100F7E2E3 /* main.m */; };
 		9B654CD315FF974100F7E2E3 /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B654CD215FF974100F7E2E3 /* CBAppDelegate.m */; };
 		9B654CD615FF974100F7E2E3 /* CBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B654CD515FF974100F7E2E3 /* CBViewController.m */; };
-		9B654CD915FF974100F7E2E3 /* CBViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B654CD715FF974100F7E2E3 /* CBViewController_iPhone.xib */; };
-		9B654CDC15FF974100F7E2E3 /* CBViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B654CDA15FF974100F7E2E3 /* CBViewController_iPad.xib */; };
+		9B654CD915FF974100F7E2E3 /* CBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B654CD715FF974100F7E2E3 /* CBViewController.xib */; };
+		9BA58DD615FFB49600CF9F29 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DD415FFB49600CF9F29 /* LeftViewController.m */; };
+		9BA58DD715FFB49600CF9F29 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DD515FFB49600CF9F29 /* LeftViewController.xib */; };
+		9BA58DE315FFB77900CF9F29 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DE015FFB77900CF9F29 /* IIViewDeckController.m */; };
+		9BA58DE415FFB77900CF9F29 /* WrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DE215FFB77900CF9F29 /* WrapController.m */; };
+		9BA58DE715FFC9C300CF9F29 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DE615FFC9C300CF9F29 /* menu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +35,15 @@
 		9B654CD215FF974100F7E2E3 /* CBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
 		9B654CD415FF974100F7E2E3 /* CBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBViewController.h; sourceTree = "<group>"; };
 		9B654CD515FF974100F7E2E3 /* CBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBViewController.m; sourceTree = "<group>"; };
-		9B654CD815FF974100F7E2E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CBViewController_iPhone.xib; sourceTree = "<group>"; };
-		9B654CDB15FF974100F7E2E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CBViewController_iPad.xib; sourceTree = "<group>"; };
+		9B654CD815FF974100F7E2E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CBViewController.xib; sourceTree = "<group>"; };
+		9BA58DD315FFB49600CF9F29 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		9BA58DD415FFB49600CF9F29 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		9BA58DD515FFB49600CF9F29 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		9BA58DDF15FFB77900CF9F29 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		9BA58DE015FFB77900CF9F29 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		9BA58DE115FFB77900CF9F29 /* WrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapController.h; sourceTree = "<group>"; };
+		9BA58DE215FFB77900CF9F29 /* WrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapController.m; sourceTree = "<group>"; };
+		9BA58DE615FFC9C300CF9F29 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +90,17 @@
 		9B654CC815FF974100F7E2E3 /* spikes */ = {
 			isa = PBXGroup;
 			children = (
+				9BA58DE515FFC9AE00CF9F29 /* static */,
 				9B654CD115FF974100F7E2E3 /* CBAppDelegate.h */,
 				9B654CD215FF974100F7E2E3 /* CBAppDelegate.m */,
 				9B654CD415FF974100F7E2E3 /* CBViewController.h */,
 				9B654CD515FF974100F7E2E3 /* CBViewController.m */,
-				9B654CD715FF974100F7E2E3 /* CBViewController_iPhone.xib */,
-				9B654CDA15FF974100F7E2E3 /* CBViewController_iPad.xib */,
+				9BA58DDE15FFB77900CF9F29 /* ViewDeck */,
+				9B654CD715FF974100F7E2E3 /* CBViewController.xib */,
 				9B654CC915FF974100F7E2E3 /* Supporting Files */,
+				9BA58DD315FFB49600CF9F29 /* LeftViewController.h */,
+				9BA58DD415FFB49600CF9F29 /* LeftViewController.m */,
+				9BA58DD515FFB49600CF9F29 /* LeftViewController.xib */,
 			);
 			path = spikes;
 			sourceTree = "<group>";
@@ -99,6 +114,25 @@
 				9B654CD015FF974100F7E2E3 /* spikes-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BA58DDE15FFB77900CF9F29 /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				9BA58DDF15FFB77900CF9F29 /* IIViewDeckController.h */,
+				9BA58DE015FFB77900CF9F29 /* IIViewDeckController.m */,
+				9BA58DE115FFB77900CF9F29 /* WrapController.h */,
+				9BA58DE215FFB77900CF9F29 /* WrapController.m */,
+			);
+			path = ViewDeck;
+			sourceTree = "<group>";
+		};
+		9BA58DE515FFC9AE00CF9F29 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				9BA58DE615FFC9C300CF9F29 /* menu.png */,
+			);
+			name = static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B654CCD15FF974100F7E2E3 /* InfoPlist.strings in Resources */,
-				9B654CD915FF974100F7E2E3 /* CBViewController_iPhone.xib in Resources */,
-				9B654CDC15FF974100F7E2E3 /* CBViewController_iPad.xib in Resources */,
+				9B654CD915FF974100F7E2E3 /* CBViewController.xib in Resources */,
+				9BA58DD715FFB49600CF9F29 /* LeftViewController.xib in Resources */,
+				9BA58DE715FFC9C300CF9F29 /* menu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +204,9 @@
 				9B654CCF15FF974100F7E2E3 /* main.m in Sources */,
 				9B654CD315FF974100F7E2E3 /* CBAppDelegate.m in Sources */,
 				9B654CD615FF974100F7E2E3 /* CBViewController.m in Sources */,
+				9BA58DD615FFB49600CF9F29 /* LeftViewController.m in Sources */,
+				9BA58DE315FFB77900CF9F29 /* IIViewDeckController.m in Sources */,
+				9BA58DE415FFB77900CF9F29 /* WrapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,20 +221,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		9B654CD715FF974100F7E2E3 /* CBViewController_iPhone.xib */ = {
+		9B654CD715FF974100F7E2E3 /* CBViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9B654CD815FF974100F7E2E3 /* en */,
 			);
-			name = CBViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		9B654CDA15FF974100F7E2E3 /* CBViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B654CDB15FF974100F7E2E3 /* en */,
-			);
-			name = CBViewController_iPad.xib;
+			name = CBViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,6 +324,7 @@
 				9B654CE115FF974100F7E2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

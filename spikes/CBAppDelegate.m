@@ -9,19 +9,29 @@
 #import "CBAppDelegate.h"
 
 #import "CBViewController.h"
+#import "LeftViewController.h"
+#import "IIViewDeckController.h"
 
 @implementation CBAppDelegate
+
+@synthesize leftController = _leftController;
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[CBViewController alloc] initWithNibName:@"CBViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[CBViewController alloc] initWithNibName:@"CBViewController_iPad" bundle:nil];
-    }
-    self.window.rootViewController = self.viewController;
+    CBViewController *centerController = [[CBViewController alloc] initWithNibName:@"CBViewController" bundle:nil];
+    self.viewController = [[UINavigationController alloc] initWithRootViewController:centerController];
+    self.leftController = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
+
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.viewController
+                                                                                    leftViewController:self.leftController
+                                                                                   rightViewController:nil];
+    deckController.rightLedge = 100;
+    self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
     return YES;
 }

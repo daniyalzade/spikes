@@ -1,5 +1,5 @@
 //
-//  CBViewController.h
+//  LeftViewController.h
 //  spikes
 //
 //  Created by eytan on 9/11/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CBViewController : UITableViewController
+@interface LeftViewController : UIViewController
 
 @end
