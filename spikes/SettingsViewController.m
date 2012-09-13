@@ -17,12 +17,6 @@
 
 @synthesize apiKeyField;
 
-- (IBAction)onSettingsSubmitted:(id)sender {
-    NSString* apikey = self.apiKeyField.text;
-    NSLog(@"apikey: %@", apikey);
-    [ApikeyDB setApikey:apikey];
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -60,6 +54,7 @@
 
 - (IBAction)textFieldFinished:(id)sender
 {
-    // [sender resignFirstResponder];
+    NSString* apikey = self.apiKeyField.text;
+    [ApikeyDB setApikey:apikey];
 }
 @end

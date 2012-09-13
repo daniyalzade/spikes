@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CBViewController : UITableViewController
+@interface CBViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic) NSString *domain;
 
 @end

@@ -25,6 +25,11 @@
 		9BA58DF315FFD11400CF9F29 /* settings.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DF215FFD11400CF9F29 /* settings.jpg */; };
 		9BA58DF515FFD28500CF9F29 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DF415FFD28500CF9F29 /* settings.png */; };
 		9BA58DF815FFEF3800CF9F29 /* ApikeyDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DF715FFEF3800CF9F29 /* ApikeyDB.m */; };
+		9BA58DFB1602287C00CF9F29 /* CBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DFA1602287C00CF9F29 /* CBServer.m */; };
+		9BA58DFE16023E0600CF9F29 /* CBDomainItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58DFD16023E0600CF9F29 /* CBDomainItemCell.m */; };
+		9BA58E0016023EAC00CF9F29 /* CBDomainItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58DFF16023EAC00CF9F29 /* CBDomainItemCell.xib */; };
+		9BA58E061602873500CF9F29 /* CBSpikeItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA58E051602873500CF9F29 /* CBSpikeItemCell.m */; };
+		9BA58E081602894800CF9F29 /* CBSpikeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA58E071602894700CF9F29 /* CBSpikeItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,14 @@
 		9BA58DF415FFD28500CF9F29 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		9BA58DF615FFEF3800CF9F29 /* ApikeyDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApikeyDB.h; sourceTree = "<group>"; };
 		9BA58DF715FFEF3800CF9F29 /* ApikeyDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApikeyDB.m; sourceTree = "<group>"; };
+		9BA58DF91602287B00CF9F29 /* CBServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBServer.h; sourceTree = "<group>"; };
+		9BA58DFA1602287C00CF9F29 /* CBServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBServer.m; sourceTree = "<group>"; };
+		9BA58DFC16023E0500CF9F29 /* CBDomainItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDomainItemCell.h; sourceTree = "<group>"; };
+		9BA58DFD16023E0600CF9F29 /* CBDomainItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDomainItemCell.m; sourceTree = "<group>"; };
+		9BA58DFF16023EAC00CF9F29 /* CBDomainItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBDomainItemCell.xib; sourceTree = "<group>"; };
+		9BA58E041602873300CF9F29 /* CBSpikeItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSpikeItemCell.h; sourceTree = "<group>"; };
+		9BA58E051602873500CF9F29 /* CBSpikeItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSpikeItemCell.m; sourceTree = "<group>"; };
+		9BA58E071602894700CF9F29 /* CBSpikeItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBSpikeItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +121,24 @@
 				9BA58DEC15FFCC1D00CF9F29 /* SettingsViewController.h */,
 				9BA58DED15FFCC1D00CF9F29 /* SettingsViewController.m */,
 				9BA58DEE15FFCC1D00CF9F29 /* SettingsViewController.xib */,
+				9BA58DF91602287B00CF9F29 /* CBServer.h */,
+				9BA58DFA1602287C00CF9F29 /* CBServer.m */,
 				9BA58DF615FFEF3800CF9F29 /* ApikeyDB.h */,
 				9BA58DF715FFEF3800CF9F29 /* ApikeyDB.m */,
 				9B654CD415FF974100F7E2E3 /* CBViewController.h */,
 				9B654CD515FF974100F7E2E3 /* CBViewController.m */,
+				9BA58E041602873300CF9F29 /* CBSpikeItemCell.h */,
+				9BA58E051602873500CF9F29 /* CBSpikeItemCell.m */,
+				9BA58E071602894700CF9F29 /* CBSpikeItemCell.xib */,
 				9BA58DDE15FFB77900CF9F29 /* ViewDeck */,
 				9B654CD715FF974100F7E2E3 /* CBViewController.xib */,
 				9B654CC915FF974100F7E2E3 /* Supporting Files */,
 				9BA58DD315FFB49600CF9F29 /* LeftViewController.h */,
 				9BA58DD415FFB49600CF9F29 /* LeftViewController.m */,
 				9BA58DD515FFB49600CF9F29 /* LeftViewController.xib */,
+				9BA58DFC16023E0500CF9F29 /* CBDomainItemCell.h */,
+				9BA58DFD16023E0600CF9F29 /* CBDomainItemCell.m */,
+				9BA58DFF16023EAC00CF9F29 /* CBDomainItemCell.xib */,
 			);
 			path = spikes;
 			sourceTree = "<group>";
@@ -213,6 +234,8 @@
 				9BA58DF015FFCC1D00CF9F29 /* SettingsViewController.xib in Resources */,
 				9BA58DF315FFD11400CF9F29 /* settings.jpg in Resources */,
 				9BA58DF515FFD28500CF9F29 /* settings.png in Resources */,
+				9BA58E0016023EAC00CF9F29 /* CBDomainItemCell.xib in Resources */,
+				9BA58E081602894800CF9F29 /* CBSpikeItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +254,9 @@
 				9BA58DE415FFB77900CF9F29 /* WrapController.m in Sources */,
 				9BA58DEF15FFCC1D00CF9F29 /* SettingsViewController.m in Sources */,
 				9BA58DF815FFEF3800CF9F29 /* ApikeyDB.m in Sources */,
+				9BA58DFB1602287C00CF9F29 /* CBServer.m in Sources */,
+				9BA58DFE16023E0600CF9F29 /* CBDomainItemCell.m in Sources */,
+				9BA58E061602873500CF9F29 /* CBSpikeItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
