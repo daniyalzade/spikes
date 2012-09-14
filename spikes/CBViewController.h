@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CBViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
+@interface CBViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
 @property (nonatomic) NSString *domain;
+@property (weak, nonatomic) IBOutlet UITableView *spikesTVC;
 
 @end

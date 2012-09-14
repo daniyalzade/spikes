@@ -21,13 +21,17 @@
 @implementation CBViewController
 
 @synthesize domain = _domain;
+@synthesize spikesTVC = _spikesTVC;
 @synthesize spikes = _spikes;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     UINib *nib = [UINib nibWithNibName:@"CBSpikeItemCell" bundle:nil];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"CBSpikeItemCell"];
+    [self.spikesTVC registerNib:nib forCellReuseIdentifier:@"CBSpikeItemCell"];
+    [self.spikesTVC setDelegate:self];
+    [self.spikesTVC setDataSource:self];
+
 	// Do any additional setup after loading the view, typically from a nib.
     UIImage *buttonImage = [UIImage imageNamed:@"menu.png"];
     UIImage *settingsImage = [UIImage imageNamed:@"settings.png"];
@@ -40,6 +44,7 @@
         NSLog(@"domain %@", self.domain);
         self.spikes = [[CBServer getInstance] getSpikes:self.domain];
     } else {
+        self.spikes = [[CBServer getInstance] getSpikes:@"nytimes.com"];
         [[CBServer getInstance] updateDomains];
     }
 }
@@ -52,6 +57,7 @@
 
 - (void)viewDidUnload
 {
+    [self setSpikesTVC:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -93,8 +99,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *spike = [self.spikes objectAtIndex:indexPath.row];
-    CBSpikeItemCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CBSpikeItemCell"];
+    CBSpikeItemCell *cell = [self.spikesTVC dequeueReusableCellWithIdentifier:@"CBSpikeItemCell"];
+    if (cell == nil) {
+        NSLog(@"nil");
+    }
     return cell;
 }
 
