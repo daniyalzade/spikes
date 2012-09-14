@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CBSpikeItemCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *spikeLabel;
 
 @end

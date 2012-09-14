@@ -54,15 +54,14 @@ static CBServer* instance;
 }
 
 - (NSArray*) getSpikes: (NSString *) domain {
-//    NSString* apikey = [ApikeyDB getApikey];
-//    NSDictionary *params = @{ @"apikey": apikey, @"limit": @10, @"host": domain};
-//    NSString *paramsStr = [self encodeParameters:params];
-//    NSURL *url = [NSURL URLWithString:[SERVER_ADDR stringByAppendingFormat: @"historical/spikes/%@", paramsStr]];
-//    //    NSLog(@"url %@", url);
-//    NSDictionary *response = [self sendRequestToURL:url];
-//    //    NSLog(@"response: %@", response);
-//    return [response objectForKey:@"spikes"];
-    return @[@'foo'];
+    NSString* apikey = [ApikeyDB getApikey];
+    NSDictionary *params = @{ @"apikey": apikey, @"limit": @10, @"host": domain};
+    NSString *paramsStr = [self encodeParameters:params];
+    NSURL *url = [NSURL URLWithString:[SERVER_ADDR stringByAppendingFormat: @"historical/spikes/%@", paramsStr]];
+    NSLog(@"url %@", url);
+    NSDictionary *response = [self sendRequestToURL:url];
+    NSLog(@"response: %@", response);
+    return [[response objectForKey:@"data"] objectForKey:@"spikes"];
 }
 
 + (CBServer*) getInstance {

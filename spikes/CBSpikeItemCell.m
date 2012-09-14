@@ -9,6 +9,7 @@
 #import "CBSpikeItemCell.h"
 
 @implementation CBSpikeItemCell
+@synthesize spikeLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

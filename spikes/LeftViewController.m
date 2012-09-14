@@ -71,7 +71,6 @@
 {
     NSString *domain = [[[CBServer getInstance] getDomains] objectAtIndex:indexPath.row];
     CBViewController *cbView = (CBViewController *) ((UINavigationController*) self.viewDeckController.centerController).topViewController;
-    [cbView.spikesTVC reloadData];
     cbView.domain = domain;
     [self.viewDeckController toggleLeftView];
 }
